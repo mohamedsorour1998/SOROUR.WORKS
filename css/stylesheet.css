@@ -25,6 +25,9 @@ header {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.8rem;
+  position: absolute;
+  top: 0.01em;
+  left: 0.5em;
 }
 .navigation a {
   color: blue;
@@ -215,3 +218,4 @@ section {
 .footer .footer-title span {
   color: blue;
 }
+/* solar system */
