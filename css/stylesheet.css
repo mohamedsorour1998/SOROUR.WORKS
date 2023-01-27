@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+  background: url(./../img/Banner.jpg) no-repeat;
+  background-size: 21% 100%;
+  background-color: #f0f0f0;
+  background-position: center;
+}
+.logo {
+  text-decoration: none;
+  color: blue;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.navigation a {
+  color: blue;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 30px;
+}
+.navigation > a:hover {
+  color: blueviolet;
+}
+section {
+  padding: 100px 85px;
+}
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(./../img/622f490f4ae6648703e578e7_k8.png),
+    url(./../img/Formal\ Personal\ 4x6.jpeg);
+  background-repeat: no-repeat;
+  /*  background-attachment: fixed;*/
+  background-position: top left, bottom right;
+  background-size: 62% 100%, 38% 100%;
+}
+.main div h2 {
+  color: white;
+  font-size: 1.4em;
+  font-weight: 500;
+  margin-top: -30px;
+  padding-bottom: 50px;
+}
+.main div h2 span {
+  display: inline-block;
+  color: blanchedalmond;
+  font-size: 3em;
+  font-weight: 800;
+  margin-top: 8px;
+}
+.main h3 {
+  color: white;
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 300px;
+  margin-bottom: 30px;
+}
+#Kubernetes {
+  display: inline-block;
+  color: blue;
+  font-size: 1em;
+  font-weight: 900;
+}
+.main-btn {
+  color: white;
+  background-color: blue;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  letter-spacing: 1px;
+  padding: 0.9375em 2.1875em;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  transition: 0.7s ease;
+}
+.main-btn:hover {
+  background-color: rgb(19, 19, 225);
+  transform: scale(1.1);
+  transition: 0.7s ease;
+}
+.social-icons a {
+  color: white;
+  font-size: 1.7em;
+  padding-right: 30px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: blue;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.contents {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: white;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+  width: 19em;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.7s ease;
+}
+.card .icon {
+  color: blue;
+  font-size: 8rem;
+  text-align: center;
+}
+.card .info h3 {
+  color: blue;
+  font-size: 1.5rem;
+  font-weight: 450;
+  text-align: center;
+}
+.card .info p {
+  text-align: center;
+}
+.projects {
+  background-color: #f0f0f0;
+}
+.projects .contents {
+  margin-top: 30px;
+}
+.project-card {
+  background-color: white;
+  border: 1px solid white;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+.project-card:hover {
+  transform: scale(1.1);
+}
+.project-image img {
+  width: 100%;
+  height: 100%;
+}
+.project-image:hover img {
+  opacity: 0.9;
+}
+.project-info {
+  padding: 1em;
+}
+.project-category {
+  font-size: 0.8em;
+  color: black;
+}
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+.more-details {
+  text-decoration: none;
+  color: blue;
+}
+. more-details:hover {
+  color: blueviolet;
+}
+
+.contents .icon {
+  font-size: 4.5rem;
+}
+.contents .info h3 {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 450;
+}
+.contents .info p {
+  font-size: 1rem;
+}
+.footer {
+  display: flex;
+  background-color: #000016;
+  justify-content: space-between;
+
+  padding: 2em;
+}
+.footer h2 {
+  color: aliceblue;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.footer .footer-title span {
+  color: blue;
+}
