@@ -73,7 +73,7 @@ section {
   font-size: 3em;
   font-weight: 600;
   letter-spacing: 1px;
-  margin-top: 300px;
+  margin-top: 450px;
   margin-bottom: 30px;
 }
 #Kubernetes {
@@ -218,4 +218,105 @@ section {
 .footer .footer-title span {
   color: blue;
 }
-/* solar system */
+/* apply css on the solar system and make it moves */
+.solar-system {
+  margin: 0 auto;
+  width: 400px;
+  position: relative;
+  right: 77%;
+  height: 350px;
+  border-radius: 50%;
+  background-image: radial-gradient(#dadada, #000000);
+  overflow: hidden;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: yellow;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.planet {
+  background: #681c1a;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#mercury {
+  width: 10px;
+  height: 10px;
+  top: 25%;
+  left: 47.5%;
+  animation: planetarysystem 8s linear infinite;
+}
+
+#venus {
+  width: 12px;
+  height: 12px;
+  top: 8%;
+  left: 42.5%;
+  animation: planetarysystem 11s linear infinite;
+}
+
+#earth {
+  width: 20px;
+  height: 20px;
+  top: 30%;
+  left: 15%;
+  animation: planetarysystem 13s linear infinite;
+}
+
+#mars {
+  width: 16px;
+  height: 16px;
+  top: 95%;
+  left: 2.5%;
+  animation: planetarysystem 18s linear infinite;
+}
+
+#jupiter {
+  width: 40px;
+  height: 40px;
+  top: 20%;
+  left: 37.5%;
+  animation: planetarysystem 23s linear infinite;
+}
+
+#saturn {
+  width: 36px;
+  height: 36px;
+  top: 80%;
+  left: 22.5%;
+  animation: planetarysystem 28s linear infinite;
+}
+
+#uranus {
+  width: 32px;
+  height: 32px;
+  top: 2%;
+  left: 10%;
+  animation: planetarysystem 33s linear infinite;
+}
+
+#neptune {
+  width: 28px;
+  height: 28px;
+  top: 90%;
+  left: 35%;
+  animation: planetarysystem 38s linear infinite;
+}
+
+@keyframes planetarysystem {
+  0% {
+    transform: rotate(0deg) translate(0);
+  }
+  100% {
+    transform: rotate(360deg) translate(215px);
+  }
+}
