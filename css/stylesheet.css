@@ -164,8 +164,9 @@ section {
   transform: scale(1.1);
 }
 .project-image img {
-  width: 25rem;
+  width: 23rem;
   height: 25rem;
+  transition: 0.7s ease;
 }
 .project-image:hover img {
   opacity: 0.9;
