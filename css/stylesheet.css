@@ -59,26 +59,40 @@ section {
   color: white;
   font-size: 1.4em;
   font-weight: 500;
-  margin-top: -30px;
-  padding-bottom: 50px;
+  position: relative;
+  letter-spacing: 1px;
+  top: -10em;
 }
 .main div h2 span {
   display: inline-block;
   color: blanchedalmond;
   font-size: 3em;
   font-weight: 800;
-  margin-top: 8px;
+  letter-spacing: 1px;
 }
 .main h3 {
   color: white;
   font-size: 3em;
   font-weight: 600;
   letter-spacing: 1px;
-  margin: 50% 5% 5% 8%;
+  position: relative;
+  top: 5em;
+  left: 4em;
 }
+.main p {
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-bottom: 1%;
+  position: relative;
+  top: 15em;
+  left: 4em;
+}
+
 #Kubernetes {
   display: inline-block;
-  color: blue;
+  color: rgb(5, 5, 143);
   font-size: 1em;
   font-weight: 900;
 }
@@ -92,7 +106,8 @@ section {
   letter-spacing: 1px;
   padding: 0.9375em 2.1875em;
   border-radius: 15px;
-  margin-bottom: 10px;
+  position: relative;
+  top: 13em;
   transition: 0.7s ease;
 }
 .main-btn:hover {
@@ -104,6 +119,8 @@ section {
   color: white;
   font-size: 1.7em;
   padding-right: 30px;
+  position: relative;
+  top: 9em;
 }
 .title {
   display: flex;
