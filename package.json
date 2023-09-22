@@ -4,9 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:prod": "ng build --configuration production --base-href https://mohamedsorour1998.github.io/SOROUR.WORKS/",
-    "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
-    "watch": "ng build --watch --configuration development"
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
