@@ -13,7 +13,7 @@ jobs:
       - name: Build and Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v2
         env:
-          ACCESS_TOKEN: ${{ secrets.OKEN }}
+          ACCESS_TOKEN: ${{ secrets.TOKEN }}
           BASE_BRANCH: main
           BRANCH: main
           FOLDER: dist/sorour.works
