@@ -1,4 +1,4 @@
-name: CI
+name: Build and Deploy Angular Project
 
 on:
   push:
@@ -8,26 +8,32 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 18
+          node-version: "14"
 
-      - run: |
-          npm i
-          npm run build
+      - name: Install Dependencies
+        run: npm install
 
-  # Deployment job
+      - name: Build Angular Project
+        run: npm run build -- --prod
+
   deploy:
     runs-on: ubuntu-latest
-    needs: [build]
+
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v2
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          github_token: ${{ secrets.TOKEN }}
-          publish_dir: ./dist/sorour.works # Adjust if your build output is in a different directory
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          BRANCH: main
+          FOLDER: dist/sorour.works
