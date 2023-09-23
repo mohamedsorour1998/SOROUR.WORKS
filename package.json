@@ -5,9 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "deploy": "ng deploy --base-href=/SOROUR.WORKS/"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
