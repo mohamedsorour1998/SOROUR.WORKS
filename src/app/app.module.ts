@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-import { PageScrollService, NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
-
+import {
+  PageScrollService,
+  NgxPageScrollCoreModule,
+} from 'ngx-page-scroll-core';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
@@ -30,10 +33,13 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes), // add the routes to your RouterModule,
+    RouterModule.forRoot(routes), // add the routes to your RouterModule
     NgxPageScrollCoreModule,
   ],
-  providers: [PageScrollService],
+  providers: [
+    PageScrollService,
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
+  ],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
