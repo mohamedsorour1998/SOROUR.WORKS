@@ -15,11 +15,11 @@ import { AboutComponent } from './pages/about/about.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'projects', component: ProjectsComponent },
   // This path is a fallback when no routes are matched
-  { path: '**', redirectTo: 'home', pathMatch: 'full' },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({
