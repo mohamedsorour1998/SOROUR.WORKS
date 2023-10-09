@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>My Projects</h1>
+
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let project of projects">
+      <div class="card my-3">
+        <img
+          [src]="project.imageUrl"
+          class="card-img-top"
+          alt="{{ project.name }}"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ project.name }}</h5>
+          <p class="card-text">{{ project.description }}</p>
+          <a [href]="project.githubLink" class="btn btn-primary" target="_blank"
+            >Go to GitHub</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
