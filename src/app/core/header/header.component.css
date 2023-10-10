@@ -1,3 +1,7 @@
 .cursor-pointer {
   cursor: pointer;
 }
+.navbar-logo {
+  height: 20%; /* Adjust as needed */
+  width: auto; /* Adjust as needed */
+}

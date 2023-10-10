@@ -1,3 +1,11 @@
 a.text-light:hover {
   color: #ccc;
 }
+.footer-social-links a {
+  margin-right: 10px;
+  color: #333; /* Or any color you prefer */
+}
+
+.footer-social-links a:hover {
+  color: #666; /* Or any color you prefer */
+}
