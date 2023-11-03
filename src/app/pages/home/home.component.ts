@@ -9,8 +9,12 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   constructor() { }
 
-  scrollToProjects() {
-    const projectsElement = document.getElementById('projects');
-    projectsElement?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  scrollToElement(elementId: string): void {
+    const element = document.getElementById(elementId);
+    if (element) {
+      const yCoordinate = element.getBoundingClientRect().top + window.pageYOffset;
+      const yOffset = -50
+      window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+    }
   }
 }
