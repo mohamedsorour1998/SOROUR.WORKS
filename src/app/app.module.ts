@@ -13,6 +13,7 @@ import { FooterComponent } from './core/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { CertsComponent } from './pages/certs/certs.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -31,6 +32,7 @@ const routes: Routes = [
     HomeComponent,
     AboutComponent,
     ProjectsComponent,
+    CertsComponent,
   ],
   imports: [
     BrowserModule,
