@@ -14,7 +14,7 @@ export class AboutComponent {
     'Configuration Management: Ansible',
     'IaC: Terraform',
     'SQL: MySQL, PostgreSQL, PL/SQL',
-    'Microservices Comms: RESTful API, Kafka',
+    'Microservices Communications: RESTful API, Kafka',
     'Version Control System: Git',
     'Frontend Frameworks: React, Angular',
     'Agile',
@@ -26,5 +26,6 @@ export class AboutComponent {
     'Backend Frameworks: Express, Django',
     'Communication Skills',
     'Presentation Skills',
+    'Professional English',
   ];
 }
