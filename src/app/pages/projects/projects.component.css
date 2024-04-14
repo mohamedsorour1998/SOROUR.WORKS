@@ -3,3 +3,8 @@
   height: 200px; /* Set a fixed height */
   object-fit: cover; /* Ensures the aspect ratio of the image is preserved */
 }
+.container {
+  background-color: #f0f0f0; /* Light grey background for the section */
+  border-radius: 8px; /* Rounded corners for the container */
+  padding: 20px;
+}

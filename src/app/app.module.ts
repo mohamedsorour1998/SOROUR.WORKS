@@ -14,12 +14,16 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { CertsComponent } from './pages/certs/certs.component';
+import { ExperienceComponent } from './pages/experience/experience.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contacts', component: FooterComponent },
+  { path: 'certificates', component: CertsComponent },
+  { path: 'experience', component: ExperienceComponent },
+
   // This path is a fallback when no routes are matched
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
@@ -33,11 +37,12 @@ const routes: Routes = [
     AboutComponent,
     ProjectsComponent,
     CertsComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes, {
-      scrollPositionRestoration: 'enabled', // or 'top'
+      scrollPositionRestoration: 'enabled',
       anchorScrolling: 'enabled',
       onSameUrlNavigation: 'reload',
     }),
@@ -45,7 +50,7 @@ const routes: Routes = [
   ],
   providers: [
     PageScrollService,
-    { provide: LocationStrategy, useClass: PathLocationStrategy }, // <-- changed here
+    { provide: LocationStrategy, useClass: PathLocationStrategy },
   ],
   bootstrap: [AppComponent],
 })

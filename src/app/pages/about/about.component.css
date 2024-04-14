@@ -1,0 +1,10 @@
+.container {
+  background-color: #f0f0f0; /* Light grey background for the section */
+  border-radius: 8px; /* Rounded corners for the container */
+  padding: 20px;
+}
+
+.list-group-item {
+  background-color: transparent; /* Makes list background transparent */
+  border: none; /* Removes borders from list items */
+}

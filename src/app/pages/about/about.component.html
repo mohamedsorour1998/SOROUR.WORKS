@@ -1,16 +1,25 @@
-<div class="container my-5">
-  <h1>About Me</h1>
-  <p>
-    I am a Junior DevOps Engineer specialized in cloud migrations and container orchestration.
-    With a strong background in software development and system administration,
-    I am able to design and implement a full DevOps pipeline for your project.
-  </p>
+<div class="container my-4">
+  <h2>About Me</h2>
+  <p>{{ aboutText }}</p>
   <h2>Skills</h2>
-  <ul>
-    <li>Cloud migrations</li>
-    <li>Container orchestration</li>
-    <li>Continuous integration and deployment</li>
-    <li>Infrastructure as code</li>
-    <li>Monitoring and alerting</li>
-  </ul>
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="list-group">
+        <ng-container *ngFor="let skill of skills; let i = index">
+          <li class="list-group-item" *ngIf="i < skills.length / 2">
+            {{ skill }}
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <ul class="list-group">
+        <ng-container *ngFor="let skill of skills; let i = index">
+          <li class="list-group-item" *ngIf="i >= skills.length / 2">
+            {{ skill }}
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </div>
 </div>
