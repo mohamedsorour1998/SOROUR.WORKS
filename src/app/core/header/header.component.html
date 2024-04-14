@@ -1,17 +1,26 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container d-flex justify-content-center">
-    <div
-      class="collapse navbar-collapse d-flex justify-content-center"
-      id="navbarNav"
+  <div class="container">
+    <a class="navbar-brand" href="#" (click)="scrollToElement('home')"
+      >SOROUR.WORKS</a
     >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <div
-            class="nav-link mr-3 cursor-pointer"
-            (click)="scrollToElement('home')"
+          <a class="nav-link" href="#" (click)="scrollToElement('home')"
+            >Home</a
           >
-            Home
-          </div>
         </li>
         <li class="nav-item">
           <div
