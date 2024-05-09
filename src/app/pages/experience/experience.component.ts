@@ -8,14 +8,18 @@ import { Component } from '@angular/core';
 export class ExperienceComponent {
   experiences = [
     {
-      role: 'Junior DevOps Engineer',
+      role: 'DevOps Engineer',
       company: 'SEITech Solutions',
       location: 'Cairo, Egypt',
       period: '09/2023 – present',
       employmentType: 'Full-time',
       details: [
-        'ADAS Platform Application Development: Worked in an agile team on the development of Advanced Driver-Assistance Systems (ADAS) platform applications, utilizing C/C++, Python, Docker, Jenkins, AWS, and other relevant technologies.',
-        'DevOps and CI/CD: Developed and maintained continuous integration and continuous delivery (CI/CD) pipelines especially on Gitlab CI and implemented build automation procedures to enable continuous delivery of autonomous driving features.',
+        'DevOps Practices: Led the setup of full DevOps practices, increasing deployment speed by 40% and reducing failures by 25%.',
+        'CI/CD Pipelines: Built and managed CI/CD pipelines with GitLab CI, cutting deployment time by 30% and enabling faster feature delivery.',
+        'Monitoring and Observability: Implemented and maintained monitoring systems using Prometheus and Grafana, enhancing performance metrics and system visibility, which contributed to achieving system uptime of 99.9%.',
+        'Kubernetes Management: Managed Kubernetes clusters, automating application scaling and deployment to optimize resource utilization and system reliability.',
+        'ADAS Application Development: Contributed to the development of Advanced Driver-Assistance Systems using technologies such as C++, Python, Docker, Jenkins, and AWS, significantly improving application performance and efficiency.',
+
       ],
     },
     {
@@ -25,10 +29,9 @@ export class ExperienceComponent {
       period: '07/2023 – 09/2023',
       employmentType: 'Full-time',
       details: [
-        "Managing Unilever's MENA applications CI/CD pipeline on Azure and GCP.",
-        'Deploying web/mobile applications to the production and test environments.',
-        'Support for Java/ Java EE and android applications.',
-        'Troubleshooting and continual support on daily basis.',
+        "SLI/SLO : Worked with product owners to enhance application reliability by 20%.",
+        'CI/CD Management: Managed CI/CD pipelines on Azure and GCP, cutting build times by 50% and improving deployment reliability.',
+        'Support & Deployment: Improved deployment processes, reducing errors by 35%, and provided support for Java, Kafka, and Android apps, boosting system stability.',
       ],
     },
   ];
