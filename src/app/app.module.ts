@@ -15,6 +15,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { CertsComponent } from './pages/certs/certs.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
+import { EducationComponent } from './pages/education/education.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'contacts', component: FooterComponent },
   { path: 'certificates', component: CertsComponent },
   { path: 'experience', component: ExperienceComponent },
+  { path: 'education', component: EducationComponent },
 
   // This path is a fallback when no routes are matched
   { path: '**', redirectTo: '', pathMatch: 'full' },
@@ -38,6 +40,7 @@ const routes: Routes = [
     ProjectsComponent,
     CertsComponent,
     ExperienceComponent,
+    EducationComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,29 @@
+<div class="container my-4">
+  <h2>Education</h2>
+  <div *ngFor="let edu of educationHistory; let isLast = last">
+    <div class="row align-items-center mb-3">
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <img [src]="edu.icon" alt="{{ edu.program }}" class="img-fluid" />
+      </div>
+      <div class="col-lg-10 col-md-9 col-sm-8">
+        <!-- Check if it is the last entry for Bachelor's Degree -->
+        <h3>
+          <!-- Conditionally render with a hyphen if it is not the last entry -->
+          {{ edu.program }}<span *ngIf="!isLast"> -</span> {{ edu.institution }}
+        </h3>
+        <p *ngIf="edu.major"><strong>Major:</strong> {{ edu.major }}</p>
+        <p><strong>Project:</strong> {{ edu.project }}</p>
+        <p><strong>Period:</strong> {{ edu.period }}</p>
+        <p><strong>Location:</strong> {{ edu.location }}</p>
+        <!-- Conditional button to view certificate -->
+        <a
+          *ngIf="edu.certLink"
+          [href]="edu.certLink"
+          class="btn btn-primary"
+          target="_blank"
+          >View Certificate</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
