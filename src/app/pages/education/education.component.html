@@ -3,7 +3,12 @@
   <div *ngFor="let edu of educationHistory; let isLast = last">
     <div class="row align-items-center mb-3">
       <div class="col-lg-2 col-md-3 col-sm-4">
-        <img [src]="edu.icon" alt="{{ edu.program }}" class="img-fluid" />
+        <img
+          [src]="edu.icon"
+          alt="{{ edu.program }}"
+          class="img-fluid"
+          *ngIf="edu.icon"
+        />
       </div>
       <div class="col-lg-10 col-md-9 col-sm-8">
         <!-- Check if it is the last entry for Bachelor's Degree -->

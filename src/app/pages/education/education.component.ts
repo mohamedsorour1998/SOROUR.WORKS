@@ -39,7 +39,6 @@ export class EducationComponent {
         'Graduation Project: IoT Water Desalination Plant using Python, GPA3.4/4',
       period: '09/2016 – 05/2021',
       location: 'Cairo, Egypt',
-      icon: 'assets/logos/computer-science.jpg',
     },
   ];
 }

@@ -3,12 +3,7 @@
   border-radius: 8px; /* Rounded corners for the container */
   padding: 20px;
 }
-@media (max-width: 768px) {
-  /* Adjust this breakpoint as needed */
-  .extra-spacing {
-    margin-top: 1rem; /* Adjust the space as needed */
-  }
-}
+
 .general-extra-spacing {
   margin-top: 2rem; /* Adjust the space as needed */
 }
