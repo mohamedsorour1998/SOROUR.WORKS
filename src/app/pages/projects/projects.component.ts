@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects = [
     {
-      name: 'HELLA Radar Simulation Tool Set',
+      name: 'Radar Simulation Tool Set',
       description:
         'Building a dynamic radar simulation tool set which have a web interface and it collects and process big data to the simulation tool "Cassendra". My part is in development the tool to collect and process big data and streaming the big data to a Kubernetes cluster which I mange.',
-      imageUrl: 'assets/projects/HELLA_Logo.jpg',
+      imageUrl: 'assets/projects/car_logo.jpg',
       githubLink: 'https://www.hella.com/en/',
     },
     {
